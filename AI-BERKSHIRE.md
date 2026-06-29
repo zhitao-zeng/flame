@@ -35,6 +35,13 @@ Charlie Munger, Duan Yongping (段永平), and Li Lu (李录) with multi-agent A
 | `/dyp-ask` | Duan Yongping-style Q&A |
 | `/wechat-article` | Draft a WeChat research article |
 
+## Local adjustment
+
+The upstream commands hard-code helper-script paths as `~/ai-berkshire/tools/...`
+(assuming the repo is cloned at `~/ai-berkshire`). Since the scripts live in this
+project's `tools/` directory, all 28 such references were rewritten to the
+project-relative `tools/...` so the commands work out of the box from the repo root.
+
 ## Dependencies
 
 The Python tools rely only on the standard library plus **Playwright** (for web
